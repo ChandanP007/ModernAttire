@@ -20,6 +20,7 @@
     $urlcount -= 4;
 
     // Generating url childs inside the urlset 
+    $urlcount++;
     for($i=$urlcount;$i<$totalProd;$i++){
         $prodId = str_replace("/","-",$response[$i][0]);
         $prodName = str_replace(" ", "-", $response[$i][1]);
